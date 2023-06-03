@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Analys</title>
+
+  <!-- TODO Styles -->
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+
+  <!-- TODO Script -->
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/formAcion.js" defer></script>
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container">
+      <div class="primary-nav">
+        <nav class="navigation">
+          <div class="logo">
+            <!-- <p class="fw-bold fs-primary-heading">Ai Word</p> -->
+            <a href="./index.html" class="fw-bold fs-primary-heading" style="text-decoration: none;">
+              <!-- <img src="./assets/img/logo.png" width="150" alt="jsr logo"> -->
+              Music Analys
+            </a>
+          </div>
+          <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="aside-navlist"
+            data-hamBG="var(--clr-neutral-900)">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <ul role="list" class="nav-list headerLinks">
+            <li class="nav-list__item isInView isActive"><a href="javascript:void(0)" data-href="#home">Home</a></li>
+          </ul>
+        </nav>
+        <ul role="list" class="nav-list-m headerLinks">
+          <li class="nav-list__item isInView isActive"><a href="javascript:void(0)" data-href="#home">Home</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="position-relative">
+
+    <section class="section hero" id="home">
+      <div class="container">
+        <div class="page-loader" id="mainLoader">
+          <div class="loader-spinner">
+          </div>
+        </div>
+        <div class="overflowHide">
+
+          <div class="heroBox height100Vh grid two-col gap-900 position-relative" data-secType="formSection">
+
+            <div class="d-flex align-item-center justify-content-center height-100">
+              <form action="" class="uploadForm formFlex gap-700">
+                <label for="" class="fs-primary-heading fw-bold text-center
+                ">Single Music File</label>
+                <input type="file" name="singleFile" id="singleFile" required>
+                <button class="btn" type="submit
+                ">Upload</button>
+              </form>
+            </div>
+            <div class="d-flex align-item-center justify-content-center height-100">
+              <form action="" class="uploadForm formFlex gap-700">
+                <label for="" class="fs-primary-heading fw-bold text-center
+                ">Multiple Music Files</label>
+                <input type="file" name="multipleFiile" id="multipleFiile" multiple>
+                <button class="btn" type="submit
+              ">Upload</button>
+              </form>
+            </div>
+          </div>
+          <div class="heroBox height100Vh spaceUp" hidden data-secType="showSection">
+            <div class="formFlex gap-400">
+              <button class="btn alignCenter" id="goBackBtn">Go Back</button>
+              <div class="showMusicInfo_box">
+                <div class="formFlex gap-400 text-center fs-500">
+                  <p><span class="fw-bold">Title</span> : New Music 200</p>
+                  <p><span class="fw-bold">Artist</span> : New Music 200</p>
+                  <p><span class="fw-bold">Album</span> : New Music 200 asdasd</p>
+                  <p><span class="fw-bold">Genre</span> : New Music 200</p>
+                  <p><span class="fw-bold">Genre</span> : New Music 200</p>
+                  <p><span class="fw-bold">Genre</span> : New Music 200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+
+</body>
+
+</html>

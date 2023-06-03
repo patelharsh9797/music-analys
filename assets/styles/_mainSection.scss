@@ -1,0 +1,61 @@
+.hero {
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+  //   url("../img/heroBG2.png");
+  // background-image: url("../img/heroBG.png");
+  background-image: url("../img/heroBG2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  // min-height: 120vh;
+
+  .container {
+    padding-top: var(--header-size);
+  }
+
+  .heroBox {
+    // --padding: 4rem;
+    // padding-top: var(--padding);
+    width: 100%;
+    // min-height: calc(100vh - var(--header-size));
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // gap: var(--size-700);
+
+    &.height100Vh {
+      min-height: calc(100vh - var(--header-size));
+    }
+
+    &.spaceUp {
+      padding-top: 5rem;
+    }
+
+    @media (max-width: 50em) {
+      flex-direction: column;
+      &.height100Vh {
+        min-height: 100%;
+        padding-block: var(--size-400);
+      }
+    }
+  }
+}
+
+.uploadForm {
+  width: 100%;
+  padding: var(--size-900);
+  border: 2px solid var(--clr-accent-400);
+  border-radius: var(--size-400);
+
+  @media (max-width: 50em) {
+    padding: var(--size-400);
+  }
+}
+
+.showMusicInfo_box {
+  padding: var(--size-700);
+  border: 2px solid var(--clr-accent-400);
+  border-radius: var(--size-400);
+  margin-bottom: var(--size-900);
+}
